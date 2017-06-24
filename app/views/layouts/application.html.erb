@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DeapTravel</title>
+    <title>DeepTravel</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <%= render :partial => "layouts/navbar" %>
+
   <body>
     <%= yield %>
           <%= debug(params) if Rails.env.development? %>
 
   </body>
+
+  <%= render :partial => "layouts/footer" %>
 </html>
