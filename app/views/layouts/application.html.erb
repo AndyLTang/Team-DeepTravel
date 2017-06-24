@@ -8,33 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-
-  <!-- navbar -->
-  <nav class="navbar">
-  <div class="navbar-container">
-
-      <!-- navbar left side -->
-      <div class="navbar-left">
-        <ul class="navbar-list">
-          <div class="navbar-list-item">G</div>
-          <div class="navbar-list-item">跟我游</div>
-        </ul>
-      </div>
-
-      <!-- navbar right side -->
-      <div class="navbar-right">
-        <ul class="navbar-list">
-          <li class="navbar-list-item">Guides</li>
-          <li class="navbar-list-item">Login</li>
-          <li class="navbar-list-item">EN/CH</li>
-        </ul>
-      </div>
-
-  </div>
-  </nav>
-
+  <%= render :partial => "layouts/navbar" %>
 
   <body>
     <%= yield %>
   </body>
+
+  <%= render :partial => "layouts/footer" %>
 </html>
