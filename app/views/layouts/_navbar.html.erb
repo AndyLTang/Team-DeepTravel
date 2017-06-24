@@ -1,21 +1,19 @@
-<!-- navbar -->
-<nav class="navbar">
-<div class="navbar-container">
+<nav class="navbar navbar-default"> 
 
-    <!-- navbar left side -->
-    <div class="navbar-left">
-      <ul class="navbar-list">
-        <div class="navbar-list-item">G</div>
-        <div class="navbar-list-item">跟我游</div>
-      </ul>
+  <div class="container"> 
+
+    <div class="navbar-header">
+      <div class="navbar-brand"></div>
+      <%= link_to '跟我游', root_path, class: 'navbar-brand' %>
     </div>
 
-    <!-- navbar right side -->
-    <div class="navbar-right">
-      <ul class="navbar-list">
-        <li class="navbar-list-item">Guides</li>
-        <li class="navbar-list-item">Login</li>
-        <li class="navbar-list-item">EN/CH</li>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+      <ul class="nav navbar-nav navbar-right">
+          
+        <li><%= link_to 'User', "users", class: 'navbar-right' %></li>
+        <li><%= link_to 'Sign Up', "users/new", class: 'navbar-right' %></li>
+        <li><%= link_to 'EN/CH', root_path, class: 'navbar-right' %></li>
+
       </ul>
     </div>
 
