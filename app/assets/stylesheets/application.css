@@ -24,37 +24,7 @@
 
 /* Navbar styles */
 .navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background-color: transparent;
-    font-size: 1.5em;
-}
-
-.navbar-container{
-  margin: 0 10%;
-}
-
-.navbar-left{
-  float: left;
-}
-
-.navbar-right{
-  float: right;
-}
-
-.navbar-list{
-  list-style-type: none;
-  padding: 1em;
-}
-
-.navbar-list-item {
-  display: inline;
-  padding: 1em;
-}
-
-.navbar-list-item:hover{
-  text-decoration: underline;
+    margin-bottom: 0;
 }
 
 /* home page styles */
@@ -80,7 +50,11 @@
 
 .searchbar{
   width: 20em;
-  height: 2em;
+  border-radius: 25px;
+  padding: 1em;
+}
+
+.textbox{
   border-radius: 25px;
   padding: 1em;
 }
@@ -104,4 +78,3 @@ button{
 footer{
   text-align: center;
 }
-
