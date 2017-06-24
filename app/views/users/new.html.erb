@@ -15,6 +15,11 @@
       <%= f.label :password_confirmation, "Confirmation" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+      <br>
+      <%= f.label :"Are you: " %>
+      <%= f.select(:property, options_for_select([['Guide', 1], ['Visitor', 2]])) %>
+      
+      <br>
 
       <%= f.label :info %>
       <%= f.text_area :info, class: 'form-control' %>

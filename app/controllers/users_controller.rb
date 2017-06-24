@@ -9,10 +9,12 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+
   end
   
   def create
     @user = User.new(user_params)
+
     if @user.save
       flash[:success] = "Welcome to the Travel!"
       redirect_to @user
@@ -31,6 +33,6 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :last_name, :email, :password,
-                                   :password_confirmation, :title, :department, :image, :tel, :bio)
+                                   :password_confirmation, :title, :department, :image, :property, :info)
     end
 end
