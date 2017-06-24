@@ -78,3 +78,29 @@ button{
 footer{
   text-align: center;
 }
+
+.profile{
+  display: table;
+}
+
+.profile-image{
+  display: table-cell;
+  background-image: url('http://style.anu.edu.au/_anu/4/images/placeholders/person.png');
+  background: cover;
+  background-repeat: no-repeat;
+  height: 256px;
+  min-width: 100px;
+}
+
+.profile-desc{
+  display: table-cell;
+}
+
+.profile{
+  width: 100%;
+}
+
+h2 {
+  border-bottom: 1px black solid;
+
+}
