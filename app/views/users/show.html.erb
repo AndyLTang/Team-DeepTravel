@@ -2,3 +2,80 @@
 
 <%= @user.name %>, <%= @user.email %>
 
+  <br>
+<% @user.packages.each do |package| %>
+<div class = "col-md-12">
+ <div class = "col-md-4">
+ <p>package name:</p>
+  <%= link_to package.name, package %>
+  </div>
+   <div class = "col-md-4">
+   <p>package price:</p>
+   <%= package.price %>
+     </div>
+   <div class = "col-md-4">
+
+    <p>package time:</p>
+   <%= package.time %>
+        </div>
+
+    <% package.items.each do |item| %>
+    
+      <div class = "col-md-3 col-md-offset-1">
+       <p>item name:</p>
+       <%= item.name %> 
+      </div>
+
+      <div class = "col-md-4">
+       <p>item price:</p>
+       <%= item.price %> 
+      </div>
+
+      <div class = "col-md-4">
+       <p>item time:</p>
+       <%= item.time %>
+      </div>
+
+   <% end %>
+</div>   
+     <br>
+     <br>
+
+<h1><strong>create item for this package</strong></h1>
+    <%= form_for(package.items.build) do |f| %>
+
+    <%= f.label :itemsName %>
+    <%= f.text_field :name, class: 'form-control' %>
+
+    <%= f.label :itemsPrice %>
+    <%= f.number_field :price, class: 'form-control' %>
+    
+    <%= f.label :itemsTime %>
+    <%= f.number_field :time, class: 'form-control' %>
+
+    <%= hidden_field_tag :package_id, package.id %>
+    
+    <%= f.submit "Add to author", class: "btn btn-primary" %>
+  <% end %>
+<% end %>
+  <br>
+
+<ul>
+ <h1><strong>create package</strong></h1>
+
+ <%= form_for(@user.packages.build) do |f| %>
+
+    <%= f.label :Name %>
+    <%= f.text_field :name, class: 'form-control' %>
+
+    <%= f.label :Price %>
+    <%= f.number_field :price, class: 'form-control' %>
+    
+    <%= f.label :Time %>
+    <%= f.number_field :time, class: 'form-control' %>
+
+    <%= hidden_field_tag :user_id, @user.id %>
+    
+    <%= f.submit "Add to author", class: "btn btn-primary" %>
+  <% end %>
+</ul>

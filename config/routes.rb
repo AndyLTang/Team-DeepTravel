@@ -1,5 +1,20 @@
 Rails.application.routes.draw do
     
+
+
+    
+  get 'items/index'
+
+  get 'items/show'
+
+  get 'items/new'
+
+  get 'packages/index'
+
+  get 'packages/show'
+
+  get 'packages/new'
+
     get 'users/index'
     
     get 'users/show'
@@ -16,6 +31,8 @@ Rails.application.routes.draw do
 
 
     resources :users
+    resources :packages
+    resources :items
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
