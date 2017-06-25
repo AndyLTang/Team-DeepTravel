@@ -61,7 +61,7 @@
 
 button{
   border-radius: 25px;
-  height: 2em;
+  height: 3em;
   width: 7em;
   background-color: #fca641;
   color: white;
@@ -103,4 +103,8 @@ footer{
 h2 {
   border-bottom: 1px black solid;
 
+}
+
+.inlineblk{
+  display:inline-block;
 }

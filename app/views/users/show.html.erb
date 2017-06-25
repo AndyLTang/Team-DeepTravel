@@ -1,8 +1,6 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
 
-  	<h1>User Profile</h1>
-
   	<div class="profile">
 
   		<div class="profile-image">
@@ -23,6 +21,8 @@
 	
   	</div>
 
+  	<!-- if this is a guide, display comments -->
+  	<% if ( @user.property == 1 ) %>
 	<h2>Comments</h2>
 	<div class="comment-container">
 		<h3>John Smith</h3>
@@ -32,6 +32,7 @@
 		<h3>Jerry Serif</h3>
 		<div class="comment">★ ★ ★ ★ ☆ Thanks for a good time!</div>
 	</div>
+	<% end %>
 
 	</div>
 </div>

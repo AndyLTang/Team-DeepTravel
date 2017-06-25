@@ -3,15 +3,15 @@
   <div class="container"> 
 
     <div class="navbar-header">
-      <div class="navbar-brand"></div>
+      <div class="navbar-brand"><img src="http://i.imgur.com/eNF95Yq.jpg" width="25px" height="25px" class="inlineblk"></div>
       <%= link_to '跟我游', root_path, class: 'navbar-brand' %>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
       <ul class="nav navbar-nav navbar-right">
           
-        <li><%= link_to 'User', "users", class: 'navbar-right' %></li>
-        <li><%= link_to 'Sign Up', "users/new", class: 'navbar-right' %></li>
+        <li><%= link_to 'User', users_path, class: 'navbar-right' %></li>
+        <li><%= link_to 'Sign Up', users_new_path, class: 'navbar-right' %></li>
         <li><%= link_to 'EN/CH', root_path, class: 'navbar-right' %></li>
 
       </ul>
