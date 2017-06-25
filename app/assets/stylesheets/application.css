@@ -54,6 +54,12 @@
   padding: 1em;
 }
 
+.searchbar-sm{
+  width: 10em;
+  padding: 0.5em;
+  border-radius: 25px;
+}
+
 .textbox{
   border-radius: 25px;
   padding: 1em;
@@ -72,7 +78,7 @@ button{
 }
 
 .small{
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 footer{
