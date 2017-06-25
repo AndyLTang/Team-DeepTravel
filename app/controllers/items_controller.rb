@@ -17,7 +17,7 @@ class ItemsController < ApplicationController
     @item = @package.items.build(item_params)
     if @item.save
       flash[:success] = "new item created!"
-      redirect_to packages
+      redirect_to users_url
     else
       render 'new'
     end

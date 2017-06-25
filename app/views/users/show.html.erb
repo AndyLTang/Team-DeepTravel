@@ -21,19 +21,24 @@
 
     <% package.items.each do |item| %>
     
-      <div class = "col-md-3 col-md-offset-1">
+      <div class = "col-md-3">
        <p>item name:</p>
        <%= item.name %> 
       </div>
 
-      <div class = "col-md-4">
+      <div class = "col-md-3">
        <p>item price:</p>
        <%= item.price %> 
       </div>
 
-      <div class = "col-md-4">
+      <div class = "col-md-3">
        <p>item time:</p>
        <%= item.time %>
+      </div>
+      
+      <div class = "col-md-3">
+       <p>item info:</p>
+       <%= simple_format(item.info)%>
       </div>
 
    <% end %>
@@ -52,6 +57,9 @@
     
     <%= f.label :itemsTime %>
     <%= f.number_field :time, class: 'form-control' %>
+
+    <%= f.label :itemsInfo %>
+    <%= f.text_area :info, class: 'form-control' %>
 
     <%= hidden_field_tag :package_id, package.id %>
     
