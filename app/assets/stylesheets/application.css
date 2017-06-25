@@ -91,23 +91,18 @@ footer{
 
 .profile-image{
   display: table-cell;
-  /*background-image: url('https://mail.google.com/mail/u/0/?ui=2&ik=aff1e80b3e&view=fimg&th=15cdc848a0d10475&attid=0.1&disp=inline&realattid=ii_15cdc83c062f1f58&safe=1&attbid=ANGjdJ_3crUU1mEPORGDuU0tvhG4v5dh2BMrU_V_NKClbYCfnPtXH5gT09tzy9vtCeMZ63Oa_lvUpb8GN6D-uqxlteSj3QnhsRs_iNo10pjZM8JOXtTq7VVcaUxT1Mo&ats=1498348950355&rm=15cdc848a0d10475&zw&sz=w1811-h989');*/
-/*  background: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 256px;
   width: 256px;
-  max-width: 256px;*/
 }
 
 .profile-image img{
-  height: 256px;
-  width: auto;
+  width: 100%;
+
 }
 
 .profile-desc{
   display: table-cell;
   padding-left: 1em;
+  vertical-align: top;
 }
 
 .profile{
