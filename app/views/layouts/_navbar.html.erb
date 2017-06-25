@@ -3,7 +3,11 @@
   <div class="container"> 
 
     <div class="navbar-header">
-      <div class="navbar-brand"><img src="http://i.imgur.com/RDIXNVX.gif" width="25px" height="25px" class="inlineblk"></div>
+      <div class="navbar-brand">
+        <%= link_to root_path do %>
+          <img src="http://i.imgur.com/RDIXNVX.gif" width="25px" height="25px" class="inlineblk">
+        <% end %>
+      </div>
       <%= link_to '跟我游', root_path, class: 'navbar-brand' %>
       <input type="text" class="small searchbar">
       <button class="small">Search</button>
