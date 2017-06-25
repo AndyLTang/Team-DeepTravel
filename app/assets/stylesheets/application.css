@@ -93,13 +93,16 @@ footer{
   display: table-cell;
   background-image: url('http://style.anu.edu.au/_anu/4/images/placeholders/person.png');
   background: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 256px;
-  min-width: 100px;
+  width: 256px;
+  max-width: 256px;
 }
 
 .profile-desc{
   display: table-cell;
+  padding-left: 1em;
 }
 
 .profile{
@@ -107,10 +110,19 @@ footer{
 }
 
 h2 {
-  border-bottom: 1px black solid;
-
+  border-bottom: 1px #ccc solid;
+  margin-top: 0;
+  font-size: 1.5em;
 }
 
 .inlineblk{
   display:inline-block;
+}
+
+.tag{
+  display: inline-block;
+  background-color: #fca641 ;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: white;
 }

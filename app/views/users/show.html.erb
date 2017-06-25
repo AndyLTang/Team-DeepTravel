@@ -1,6 +1,14 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
 
+  	<% isGuide = 1 %>
+
+	<% if ( @user.property == isGuide ) %>
+		<h1>Guide</h1>
+	<% else %>
+		<h1>Customer</h1>
+	<% end %>
+
   	<div class="profile">
 
   		<div class="profile-image">
@@ -8,10 +16,16 @@
   		
   		<div class="profile-desc">
 
-			<h2>Username</h2>
+			<h2>Name</h2>
 			<%= @user.name %>
 			<h2>Email</h2>
-			<%= @user.email %>  
+			<%= @user.email %>
+
+			<% if ( @user.property == isGuide ) %>
+				<h2>Expertise</h2>
+				<span class="tag">Snowboarding</span> <span class="tag">Mountain Climbing</span> <span class="tag">Hiking</span>
+			<% end %>
+
 			<h2>Information</h2>
 			<%= @user.info %>
 			<h2>Rating</h2>
@@ -21,8 +35,11 @@
 	
   	</div>
 
+  	<br>
+  	<br>
+
   	<!-- if this is a guide, display comments -->
-  	<% if ( @user.property == 1 ) %>
+  	<% if ( @user.property == isGuide ) %>
 	<h2>Comments</h2>
 	<div class="comment-container">
 		<h3>John Smith</h3>
